@@ -17,7 +17,8 @@ export const PanelAdd = ({onCancel,addBook}) => {
             <div className = "new-item-panel">
 
                 <form onSubmit = {handleSubmit(onSubmit)}>
-                    <p>
+                    <h1> Registro de Libro</h1>
+                    <div className = "new-item-div">
                         <label> Titulo Del libro</label> <br/>
                         <input 
                             type = "text" 
@@ -32,12 +33,12 @@ export const PanelAdd = ({onCancel,addBook}) => {
                                 })
                             }
                         />  
-                    </p>
+                    </div>
                     {
                         errors.title && <span>{errors.title.message}</span>
                     }
                 
-                    <p>
+                    <div className = "new-item-div">
                         <label> Nombre de la imagen</label> <br/>
                         <input 
                             type = "text" 
@@ -57,9 +58,9 @@ export const PanelAdd = ({onCancel,addBook}) => {
                         errors.image && <span>{errors.image.message}</span>
                     }
                         
-                    </p>
+                    </div>
 
-                    <p>
+                    <div className = "new-item-div">
                         <label> Calsificacion</label> <br/>
                         <select 
                             name = 'raiting'
@@ -77,7 +78,7 @@ export const PanelAdd = ({onCancel,addBook}) => {
                             <option value = "4">4</option>
                             <option value = "5">5</option>
                         </select>
-                    </p>
+                    </div>
                     <input type = "submit" className ="button btn-blue" value ="Registrar libro"/>
                     <button 
                         className ="button btn-normal"

@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 .container .subcontainer{
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
 }
 .container .subcontainer div{
@@ -43,7 +43,7 @@
 }
 
 .new-item-panel-container{
-    background-color: #000;
+    background-color: white;
     width: 100%;
     height: 100%;
     top: 0;
@@ -52,11 +52,24 @@
 }
 
 .new-item-panel{
-    width: 300px;
+    width: 350px;
+    height: 500px;
     margin: 20px auto;
-    background-color: white;
+    background-color: rgb(19, 42, 71);
+    color: white;
     padding: 20px;
 }
 .new-item-panel p{
     padding: 5px 0;
+}
+.button {
+    margin: 5px;
+    background: white;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+}
+
+.new-item-div {
+    margin: 50px;
 }
